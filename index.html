@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mustafa's Journal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --dark-blue: #004A7C;
+      --light-blue: #B7D9FF;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--light-blue);
+      color: var(--dark-blue);
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border: 1px solid var(--dark-blue);
+      padding: 20px;
+    }
+
+    .header {
+      background: var(--light-blue);
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .header h1 { font-size: 28px; }
+    .header p { font-size: 14px; }
+
+    .sidebar {
+      background: var(--dark-blue);
+      color: #fff;
+      width: 180px;
+      float: left;
+      padding: 15px;
+      margin-right: 20px;
+    }
+    .sidebar h2 { margin-bottom: 12px; }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .main::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .post {
+      background: var(--light-blue);
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid var(--dark-blue);
+    }
+
+    .post h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      background: var(--dark-blue);
+      color: #fff;
+      display: inline-block;
+      padding: 4px 8px;
+    }
+
+    .post img {
+      width: 130px;
+      float: right;
+      margin-left: 10px;
+      border: 1px solid var(--dark-blue);
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+      }
+      .post img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Mustafa's Journal</h1>
+      <p>Everyday Treats</p>
+    </div>
+
+    <div class="sidebar">
+      <h2>Oreos</h2>
+      <ul>
+        <li><a href="#">190 Strawberry</a></li>
+        <li><a href="#">Big Vanilla</a></li>
+        <li><a href="#">Chocolate</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+
+      <div class="post">
+        <h3>Eaters – 04/09/08</h3>
+        <img src="C:\Users\l250821\Desktop\download.jpg" alt="Eaters">
+        <p>makes diabetes worth it</p>
+      </div>
+
+      <div class="post">
+        <h3>glazed cakes – 04/08/08</h3>
+        <img src="C:\Users\l250821\Desktop\images.jpg" alt="Glazed Cakes">
+        <p>a sweet treat that keeps everyone wanting some  pies.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
